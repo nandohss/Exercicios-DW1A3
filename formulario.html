@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8"/>
+        <title>Exercício 5 - Formulário</title>
+    </head>
+    <body>
+        <form action="http://www.example.com/login.php">
+            <p>Login: 
+                <input type="text" name="usuario" size="15" maxlength="30" />
+            </p>
+            <p>Senha:
+                <input type="password" name="senha" size="15" maxlength="30" />
+            </p>
+            <hr>
+            <p>O que está achando do nosso serviço?:</p>
+            <textarea name="coments" cols="20" rows="4">Descreva</textarea>
+            <hr>
+            <p>Selecione seu sexo:
+                <br>
+                <input type="radio" name="sexo" value="masculino"/> Masculino
+                <input type="radio" name="sexo" value="feminino"/> Feminino
+            </p> 
+            <hr> 
+            <p>O que você mais gosta de fazer nas horas vagas?:
+                <br>
+                <input type="checkbox" name="atividade" value="estudar"/> Estudar
+                <input type="checkbox" name="atividade" value="jogar"/> Jogar
+                <input type="checkbox" name="atividade" value="ler"/> Ler
+                <input type="checkbox" name="atividade" value="exercicio"/> Exercicio
+                <input type="checkbox" name="atividade" value="assistir"/> Assistir
+            </p>
+            <hr>
+            <p>Por quanto temo navega na internet? horas:</p>
+            <select name="tempo">
+                <option value="1">1 </option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+            </select>
+            <hr>
+            <p>Insira a imagem do teu RG</p>
+            <input type="file" name="rg"/><br>
+            <input type="submit" value="Upload"/>
+            <hr>
+            <p>Qual teu e-mail?</p>
+            <input type="text" name="email"/>
+            <input type="submit" name="emailcliente" value="enviar"/>
+            <hr>
+            <p>Pesquise</p>
+            <input type="search" name="pesquisa" placeholder="Enter"/>
+            <input type="submit" value="Pesquisar"/>
+            <br><br>
+            <fieldset>
+                <legend>Dados pessoais</legend>
+                <label>Nome:<br><input type="text" name="nome"/></label><br>
+                <label>Endereço:<br><input type="endereco" name="endereco"/></label><br>
+                <label>Telefone:<br><input type="text" name="telefone"/></label><br>
+                <label>Data de nascimento:<br><input type="date" name="datanascimento"/></label><br>
+                <label>Idade:<br><input type="number" name="idade"/></label>
+            </fieldset>
+        </form>
+    </body>
+</html>
